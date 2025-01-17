@@ -1,20 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package singletonpattern;
 
-/**
- *
- * @author User
- */
+
 public class SingletonPattern {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-     
+     Singleton singleton1 = Singleton.getInstance("First data i whant to test");
+        System.out.println("Singleton 1 Data: " + singleton1.getData());
+
+       
+        Singleton singleton2 = Singleton.getInstance("This data should not pass");
+        System.out.println("Singleton 2 Data: " + singleton2.getData());
     }
     
 }
